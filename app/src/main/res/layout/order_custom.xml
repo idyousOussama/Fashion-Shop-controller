@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_input_text_backround_res"
+    android:padding="15dp"
+    >
+ <TextView
+     android:id="@+id/order_item_text"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/oreder_items_Txt"
+     android:fontFamily="@font/zen_old_mincho"
+     android:textColor="@color/black"
+     android:layout_marginTop="5dp"
+     android:layout_marginStart="10dp"
+     android:textSize="20sp"
+     android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_item_list"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_item_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/buyer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buyer_info_tet"
+        android:fontFamily="@font/zen_old_mincho"
+
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/order_item_list"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="394dp"
+        android:layout_height="169dp"
+        android:layout_below="@+id/buyer_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/white_input_text_backround_res">
+
+        <TextView
+            android:id="@+id/buyer_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/buyer_name"
+            android:fontFamily="@font/zen_old_mincho"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/user"
+            />
+
+        <TextView
+            android:id="@+id/buyer_name"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:autoSizeTextType="uniform"
+android:maxLines="1"
+            android:fontFamily="@font/zen_old_mincho"
+            android:layout_toRightOf="@+id/buyer_name_text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/buyer_email_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_name_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/buyer_email"
+            android:fontFamily="@font/zen_old_mincho"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/email"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buyer_email"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_name_text"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:fontFamily="@font/zen_old_mincho"
+            android:layout_toRightOf="@+id/buyer_email_text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/buyer_phone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_email"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/buyer_phone"
+            android:fontFamily="@font/zen_old_mincho"
+
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/phone"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/buyer_phone"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buyer_email"
+            android:layout_marginStart="10dp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginTop="30dp"
+            android:maxLines="1"
+            android:fontFamily="@font/zen_old_mincho"
+            android:layout_toRightOf="@+id/buyer_phone_text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

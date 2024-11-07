@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/white_input_text_backround_res"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cover_userImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/user_place_holder" />
+    <TextView
+        android:id="@+id/cover_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cover_userImage"
+        android:textColor="@color/black"
+        android:fontFamily="@font/zen_old_mincho"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/cover_lastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/zen_old_mincho"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/cover_userImage"
+        android:gravity="left|center"
+        android:maxWidth="278dp"
+        android:maxLines="1"
+  />
+
+    <TextView
+        android:id="@+id/cover_counterMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/zen_old_mincho"
+        android:visibility="gone"
+        android:layout_marginRight="9dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/message_counter_backround"
+        android:gravity="center"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</RelativeLayout>

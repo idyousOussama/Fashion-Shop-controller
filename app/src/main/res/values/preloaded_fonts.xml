@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/baloo_chettan</item>
+        <item>@font/bellota_text_light</item>
+        <item>@font/maiden_orange</item>
+        <item>@font/merienda_one</item>
+        <item>@font/peralta</item>
+        <item>@font/rozha_one</item>
+        <item>@font/zen_old_mincho</item>
+        <item>@font/zilla_slab_light</item>
+    </array>
+</resources>

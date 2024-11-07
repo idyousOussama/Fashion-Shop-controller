@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Store_Application_control" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorOnPrimary">@color/brow</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorPrimary">@color/brow</item>
+        <item name="colorSecondary">@color/brow</item>
+    </style>
+
+    <style name="Theme.Store_Application_control" parent="Base.Theme.Store_Application_control" />
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Add_Bunner_Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bunner_text"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/zen_old_mincho"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/newBunnerGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:padding="7dp"
+        android:src="@drawable/arrow_left" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bunner_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        >
+
+        <ImageView
+            android:id="@+id/Add_bunner_image"
+            android:layout_width="392dp"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+ />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/brow_btn_backround"
+        android:layout_marginBottom="20dp"
+        >
+        <TextView
+            android:id="@+id/add_new_Bunner_btn"
+            android:layout_width="249dp"
+            android:layout_height="50dp"
+            android:text="@string/save_text_res"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/zen_old_mincho"
+            />
+
+
+        <ProgressBar
+            android:id="@+id/addNewBunner_progress"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/upLoad_bunnerImage_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_alignStart="@+id/bunner_card"
+        android:layout_alignEnd="@+id/bunner_card"
+        android:layout_below="@+id/bunner_card"
+        />
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Add_Category">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_Category_text_res"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/zen_old_mincho"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/newCategoryGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:padding="7dp"
+        android:src="@drawable/arrow_left" />
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/new_catedgoryImage"
+        android:layout_width="205dp"
+        android:layout_height="202dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/empty_image_icon" />
+    <TextView
+        android:id="@+id/categoryName_text"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:text="@string/category_name_txt_res"
+        android:fontFamily="@font/zen_old_mincho"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_alignStart="@+id/categoryName_input"
+        android:layout_below="@+id/new_catedgoryImage"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/categoryName_input"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/categoryName_text"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_input_text_backround_res"
+        android:hint="@string/category_name_hint"
+        android:fontFamily="@font/zen_old_mincho"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="5dp" />
+    <RelativeLayout
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:id="@+id/adding_process"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"
+                android:text="@string/adding_txt"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_new_category_btn"
+            android:layout_width="249dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:text="@string/save_text_res"
+            android:fontFamily="@font/zen_old_mincho"
+            android:enabled="false"
+            android:background="@drawable/disable_btns_backroud"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

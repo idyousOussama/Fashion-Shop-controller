@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Add_Product">
+    <TextView
+        android:id="@+id/newProText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bunner_text"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/zen_old_mincho"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/newProductGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:padding="7dp"
+        android:src="@drawable/arrow_left" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/newProText"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/new_productImage"
+                android:layout_width="205dp"
+                android:layout_height="202dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/empty_image_icon" />
+
+            <RelativeLayout
+                android:id="@+id/name_price_layout"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_productImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/productName_text"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_name_txt_res"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/productName_input"
+                    android:layout_width="179dp"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/productName_text"
+                    android:layout_marginTop="5dp"
+                    android:inputType="text"
+                    android:hint="@string/product_name_hint"
+                    android:padding="5dp"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:background="@drawable/white_input_text_backround_res"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/productPrice_text"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/product_price_txt_res"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/productPrice_input"
+                    android:layout_width="179dp"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/productName_text"
+                    android:inputType="number|text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:maxLength="5"
+                    android:hint="@string/product_price_hint"
+                    android:fontFamily="@font/zen_old_mincho"
+
+                    android:padding="5dp"
+                    android:background="@drawable/white_input_text_backround_res"
+                    android:maxLines="1" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/DelSevice_contity_layout"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_price_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/product_DeleveryService_text"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/product_DelveryService_txt_res"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/product_delService_input"
+                    android:layout_width="179dp"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/product_DeleveryService_text"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number|text"
+                    android:hint="@string/product_delService_hint"
+                    android:padding="5dp"
+                    android:maxLength="5"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:background="@drawable/white_input_text_backround_res"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/productQuantity_text"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/product_Quantity_txt_res"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/productContity_input"
+                    android:layout_width="179dp"
+                    android:layout_height="51dp"
+                    android:layout_below="@+id/productQuantity_text"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number|text"
+                    android:hint="@string/product_quantity_hint"
+                    android:fontFamily="@font/zen_old_mincho"
+                    android:maxLength="5"
+                    android:autoSizeTextType="uniform"
+                    android:padding="5dp"
+                    android:background="@drawable/white_input_text_backround_res"
+                    android:maxLines="1" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/productDescription_text"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/DelSevice_contity_layout"
+                android:text="@string/product_description_txt_res"
+                android:textColor="@color/black"
+                android:fontFamily="@font/zen_old_mincho"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/product_description"
+                android:layout_width="376dp"
+                android:layout_height="172dp"
+                android:layout_below="@+id/productDescription_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                android:fontFamily="@font/zen_old_mincho"                android:gravity="top"
+                android:hint="@string/product_description_hint"
+                android:padding="5dp"
+                android:background="@drawable/white_input_text_backround_res"
+                android:maxLength="500"
+                android:maxLines="1"/>
+        </RelativeLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="249dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/next_text_res"
+        android:enabled="false"
+        android:fontFamily="@font/zen_old_mincho"
+        android:background="@drawable/disable_btns_backroud"
+        />
+
+</RelativeLayout>
